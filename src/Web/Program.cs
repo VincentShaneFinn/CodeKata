@@ -6,6 +6,18 @@ namespace Web
 {
     public class Program
     {
+        #region Logging usage
+
+        // If you want to log, add it as a dependecy like this
+        //private readonly ILogger<HomeController> logger;
+
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    this.logger = logger;
+        //}
+
+        #endregion Logging usage
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -17,6 +29,7 @@ namespace Web
                 {
                     logging.ClearProviders();
                     logging.AddConsole();
+                    logging.AddDebug();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
