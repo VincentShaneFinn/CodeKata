@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{96B7B9E2-5E6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A731DE46-AAAA-4729-8548-D84F3D514FB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.FastTests", "test\Web.FastTests\Web.FastTests.csproj", "{01B75A3A-F3DA-4CD9-8FF1-D9903E122A49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.FastTests", "test\Web.FastTests\Web.FastTests.csproj", "{01B75A3A-F3DA-4CD9-8FF1-D9903E122A49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Blazor", "src\Web.Blazor\Web.Blazor.csproj", "{858EAC79-A315-4A03-93BA-BAE0B4C9B691}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{01B75A3A-F3DA-4CD9-8FF1-D9903E122A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B75A3A-F3DA-4CD9-8FF1-D9903E122A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01B75A3A-F3DA-4CD9-8FF1-D9903E122A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858EAC79-A315-4A03-93BA-BAE0B4C9B691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858EAC79-A315-4A03-93BA-BAE0B4C9B691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858EAC79-A315-4A03-93BA-BAE0B4C9B691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858EAC79-A315-4A03-93BA-BAE0B4C9B691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B75F7383-F665-4179-A262-480DDBD0F62F} = {96B7B9E2-5E6E-4BC2-9CFD-511F9A6C7A51}
 		{01B75A3A-F3DA-4CD9-8FF1-D9903E122A49} = {A731DE46-AAAA-4729-8548-D84F3D514FB6}
+		{858EAC79-A315-4A03-93BA-BAE0B4C9B691} = {96B7B9E2-5E6E-4BC2-9CFD-511F9A6C7A51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92BEFA21-174D-4946-BEE5-7DE0CA9CCDEF}
