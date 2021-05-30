@@ -1,0 +1,40 @@
+Bio
+
+	I'm a Software Developer that loves to write high quality code with high maintainability following the S.O.L.I.D principles, 
+architect my code to use design patterns where appropriate, and practice Test Driven Development and Extreme Programming methodology whenever I can.
+
+I've been steadily growing in experience with multiple programming languages and frameworks such as .NET MVC with C#, iPhone development with swift, 
+and even the Unity game engine.
+
+I motivate myself to continue improving and developming my programming skills by following a mantra to "Do more than I did yesterday". 
+
+In my spare time, I enjoy Movies, TV shows, and video games of many different genres, but I always prefer the ones that have thoughtfully written stories, immersive and compelling experiences, 
+and tremendous soundtracks.
+
+Test Drivent Development
+Software Architecture
+Code Quality
+Design Patterns
+Best Practices
+S.O.L.I.D Principles
+Clean Architecture
+
+
+Resume Development
+
+Notes: add descriptions of what the project is for Imalogix and Overcoming MS
+
+Software Developer - Imalogix
+Spearheaded project to create a .net web application, utilizing their mvc framework, while structuring the project with clean architecture, and practicing test driven development.
+Acted as scrum master to drive an iterave approach to development, encouraging finding smaller units of work to promote continuous positive feedback and production ready software.
+Collaborated with a consultent to add a SAML Single Sign On feature using a third party c# library, so that it was implemented the right way given no member of the team had experience in that area.
+
+Co-Lead Programmer on CS Senior Design Project - Overcoming MS
+Lead the development of an iOS mobile application using xcode and written in swift, with focus on reusable UI components, and well documented system architecture.
+Collaborated with a research team that responsible for conducting client interviews to validate requirements, and a UI/UX team for designing wireframes and user control flows.
+Presented the technical innovation of the application in the final group presentation that was judged in the Final Four competition across the entire CS college, and won 1st place.
+
+Lead Programmer on Game Workshop Project - Finisher
+Lead the development side of a third person action action game with a human playable character, melee combat, and special "Finisher" system.
+Implemented most of the Architecture and gameplay elements such as the Finisher system, individual and group enemy AI, and basic player and enemy combat functions.
+Collaborated with programmers, artists, and game designers to combine all pull requests, assets, and balance changes into source control.
