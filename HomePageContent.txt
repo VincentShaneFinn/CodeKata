@@ -1,15 +1,16 @@
 Bio
 
-	I'm a Software Developer that loves to write high quality code with high maintainability following the S.O.L.I.D principles, 
-architect my code to use design patterns where appropriate, and practice Test Driven Development and Extreme Programming methodology whenever I can.
+	I am extremely passionate about creating high quality software using Test Driven Development and Software Design Patterns & Principles. 
+I have lead several projects at work and college while following best practices and designing clean software architecture. 	
+I strive to learn something new every day through online courses, videos, or blog.
 
-I've been steadily growing in experience with multiple programming languages and frameworks such as .NET MVC with C#, iPhone development with swift, 
-and even the Unity game engine.
+I have been steadily growing in experience with multiple programming languages and frameworks such as .NET MVC (C#, Typescript), iPhone development (Swift), 
+the Unity game engine (C#), and most recently Android Studio (Java, Kotlin). 
 
-I motivate myself to continue improving and developming my programming skills by following a mantra to "Do more than I did yesterday". 
+I motivate myself to continue improving and developing my programming skills by following a mantra. "Do more than I did yesterday". 
 
 In my spare time, I enjoy Movies, TV shows, and video games of many different genres, but I always prefer the ones that have thoughtfully written stories, immersive and compelling experiences, 
-and tremendous soundtracks.
+and phenomenal soundtracks.
 
 Test Drivent Development
 Software Architecture

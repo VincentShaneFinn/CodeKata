@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeKata", "CodeKata", "{31
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KarateChop", "CodeKata\CSharp\KarateChop\KarateChop.csproj", "{1091D0BF-5408-41E6-8E43-3688F104A53C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Test\Tests\Tests.csproj", "{3EE34319-2CEB-48AE-AFE6-30D187DECD83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Test\Tests\Tests.csproj", "{3EE34319-2CEB-48AE-AFE6-30D187DECD83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars", "CodeKata\CSharp\CodeWars\CodeWars.csproj", "{5E62F045-B675-4681-AA6A-A636F96C224B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3EE34319-2CEB-48AE-AFE6-30D187DECD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE34319-2CEB-48AE-AFE6-30D187DECD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EE34319-2CEB-48AE-AFE6-30D187DECD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E62F045-B675-4681-AA6A-A636F96C224B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E62F045-B675-4681-AA6A-A636F96C224B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E62F045-B675-4681-AA6A-A636F96C224B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E62F045-B675-4681-AA6A-A636F96C224B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{B3DA1F17-7A8B-440E-91C4-769955CC9BB7} = {67B3DAB6-BEA0-4F60-ABE7-35BE6BBEDD41}
 		{1091D0BF-5408-41E6-8E43-3688F104A53C} = {3167F26A-2143-470A-8855-F7D4C2C22AA0}
 		{3EE34319-2CEB-48AE-AFE6-30D187DECD83} = {67B3DAB6-BEA0-4F60-ABE7-35BE6BBEDD41}
+		{5E62F045-B675-4681-AA6A-A636F96C224B} = {3167F26A-2143-470A-8855-F7D4C2C22AA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92BEFA21-174D-4946-BEE5-7DE0CA9CCDEF}
