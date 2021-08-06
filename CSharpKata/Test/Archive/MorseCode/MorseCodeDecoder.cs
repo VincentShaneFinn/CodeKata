@@ -1,4 +1,4 @@
-﻿namespace CodeWars.Tests.MorseCode
+﻿namespace CodeWars.Test.MorseCode
 {
     public class MorseCodeDecoder
     {
