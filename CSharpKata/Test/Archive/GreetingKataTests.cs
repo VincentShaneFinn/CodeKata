@@ -1,4 +1,4 @@
-﻿using CSharpKata.Src;
+﻿using CSharpKata.Src.Archive;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -79,7 +79,7 @@ namespace CSharpKata.Test.Archive
 
                 ShouldReturn("HELLO ONE AND TWO!");
             }
-            
+
             [Test]
             public void Arbitrary_amount_shout()
             {
