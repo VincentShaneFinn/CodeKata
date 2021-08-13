@@ -7,16 +7,34 @@ namespace CSharpKata.Src
         public static string Greet(string name)
         {
             if (name == null) name = "my friend";
-            else if (IsAllUpperCase(name)) return $"HELLO {name}!";
+            else if (IsAllCaps(name)) return $"HELLO {name}!";
             return $"Hello, { name }.";
         }
 
         public static string Greet(string[] names)
         {
             if (names.IsNullOrEmpty()) return Greet((string)null);
-            else if (names.Length == 1) return Greet(names[0]);
-            else if (names.Length == 2) return Greet(names[0] + " and " + names[1]);
-            else return GreetMultiple(names);
+
+            var standardNames = names.Where(word => !IsAllCaps(word)).ToArray();
+            var shoutNames = names.Where(word => IsAllCaps(word)).ToArray();
+
+            if (shoutNames.IsNullOrEmpty()) return GreetArray(standardNames);
+            if (standardNames.IsNullOrEmpty()) return GreetArray(shoutNames);
+            return GreetArray(standardNames) + " AND " + GreetArray(shoutNames);
+        }
+
+        private static string GreetArray(string[] names)
+        {
+            if (names.Length == 1) return Greet(names[0]);
+            if (names.Length == 2) return GreetTwo(names);
+            return GreetMultiple(names);
+        }
+
+        private static string GreetTwo(string[] names)
+        {
+            var conjunction = " and ";
+            if (AreAllCaps(names)) conjunction = " AND ";
+            return Greet(names[0] + conjunction + names[1]);
         }
 
         private static string GreetMultiple(string[] names)
@@ -24,15 +42,23 @@ namespace CSharpKata.Src
             string greeting = "Hello";
             for (int i = 0; i < names.Length; i++)
             {
-                if (i == 0) greeting += " ";
-                else if (i == names.Length - 1) greeting += ", and ";
+                bool isFirst = i == 0, isLast = i == names.Length - 1;
+                if (isFirst) greeting += " ";
+                else if (isLast) greeting += ", and ";
                 else greeting += ", ";
                 greeting += names[i];
             }
+
+            if (AreAllCaps(names)) greeting = greeting.ToUpper() + "!";
+            else greeting += ".";
+
             return greeting;
         }
 
-        private static bool IsAllUpperCase(string name) =>
-            name.ToCharArray().All(character => char.IsUpper(character));
+        private static bool AreAllCaps(string[] names) => 
+            names.All(word => IsAllCaps(word));
+
+        private static bool IsAllCaps(string name) =>
+            name.ToCharArray().All(character => char.IsUpper(character) || char.IsWhiteSpace(character));
     }
 }

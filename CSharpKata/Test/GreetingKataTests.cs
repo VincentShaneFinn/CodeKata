@@ -75,22 +75,41 @@ namespace CSharpKata.Test
             [Test]
             public void Arbitrary_amount_of_names()
             {
-                Greet(new string[] { "John", "Joe", "Jim" });
+                Greet("John", "Joe", "Jim");
 
-                ShouldReturn("Hello John, Joe, and Jim");
+                ShouldReturn("Hello John, Joe, and Jim.");
             }
 
             [Test]
             public void Single_shout()
             {
+                Greet("ELVIS");
 
+                ShouldReturn("HELLO ELVIS!");
             }
 
-            [Ignore("todo")]
+            [Test]
+            public void Double_shout()
+            {
+                Greet("ONE", "TWO");
+
+                ShouldReturn("HELLO ONE AND TWO!");
+            }
+            
+            [Test]
+            public void Arbitrary_amount_shout()
+            {
+                Greet("ONE", "TWO", "THREE");
+
+                ShouldReturn("HELLO ONE, TWO, AND THREE!");
+            }
+
             [Test]
             public void Mixin_shouts()
             {
+                Greet("Bonnie", "STEVE", "Clyde");
 
+                ShouldReturn("Hello, Bonnie and Clyde. AND HELLO STEVE!");
             }
 
             private void Greet(params string[] names)
