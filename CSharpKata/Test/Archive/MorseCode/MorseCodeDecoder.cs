@@ -1,6 +1,6 @@
-﻿namespace CodeWars.Test.MorseCode
+﻿namespace CSharpKata.Test.Archive
 {
-    public class MorseCodeDecoder
+    public static class MorseCodeDecoder
     {
         public static string Decode(string morseCode)
         {

@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using System;
 
-namespace CodeWars.Test.MorseCode
+namespace CSharpKata.Test.Archive
 {
     [TestFixture]
     public class MorseCodeDecoderTests

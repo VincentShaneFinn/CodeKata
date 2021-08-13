@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace CodeWars.Test.MorseCode
+namespace CSharpKata.Test.Archive
 {
-    public class MorseCode
+    public static class MorseCode
     {
         private static readonly Dictionary<string, string> morse = new Dictionary<string, string>()
             {
