@@ -22,22 +22,6 @@ namespace CSharpKata.Test
                 ShouldReturn("Hello, Bob.");
             }
 
-            [Test]
-            public void Handle_null()
-            {
-                Greet((string)null);
-
-                ShouldReturn("Hello, my friend.");
-            }
-
-            [Test]
-            public void Shout()
-            {
-                Greet("JERRY");
-
-                ShouldReturn("HELLO JERRY!");
-            }
-
             private void Greet(string name)
             {
                 result = GreetingKata.Greet(name);
@@ -77,7 +61,7 @@ namespace CSharpKata.Test
             {
                 Greet("John", "Joe", "Jim");
 
-                ShouldReturn("Hello John, Joe, and Jim.");
+                ShouldReturn("Hello, John, Joe, and Jim.");
             }
 
             [Test]
@@ -101,7 +85,7 @@ namespace CSharpKata.Test
             {
                 Greet("ONE", "TWO", "THREE");
 
-                ShouldReturn("HELLO ONE, TWO, AND THREE!");
+                ShouldReturn("HELLO, ONE, TWO, AND THREE!");
             }
 
             [Test]
@@ -110,6 +94,14 @@ namespace CSharpKata.Test
                 Greet("Bonnie", "STEVE", "Clyde");
 
                 ShouldReturn("Hello, Bonnie and Clyde. AND HELLO STEVE!");
+            }
+
+            [Test]
+            public void Comma_separated()
+            {
+                Greet("One", "Two,Three", "Four");
+
+                ShouldReturn("Hello, One, Two, Three, and Four.");
             }
 
             private void Greet(params string[] names)
