@@ -11,46 +11,92 @@ namespace CSharpKata.Test
     {
         private string result;
 
-        [Test]
-        public void Simple_greeting()
+        public class Given_string : GreetingKataTests
         {
-            Greet("Bob");
 
-            ShouldReturn("Hello, Bob.");
+            [Test]
+            public void Simple_greeting_with_string()
+            {
+                Greet("Bob");
+
+                ShouldReturn("Hello, Bob.");
+            }
+
+            [Test]
+            public void Handle_null()
+            {
+                Greet((string)null);
+
+                ShouldReturn("Hello, my friend.");
+            }
+
+            [Test]
+            public void Shout()
+            {
+                Greet("JERRY");
+
+                ShouldReturn("HELLO JERRY!");
+            }
+
+            private void Greet(string name)
+            {
+                result = GreetingKata.Greet(name);
+            }
         }
 
-        [Test]
-        public void Handle_null()
+        public class Given_array : GreetingKataTests
         {
-            Greet((string)null);
+            [Test]
+            public void Simple_greeting()
+            {
+                Greet("Tim");
 
-            ShouldReturn("Hello, my friend.");
-        }
+                ShouldReturn("Hello, Tim.");
+            }
 
-        [Test]
-        public void Shout()
-        {
-            Greet("JERRY");
+            [Test]
+            public void Handle_null_or_empty()
+            {
+                Greet(null);
+                ShouldReturn("Hello, my friend.");
 
-            ShouldReturn("HELLO JERRY!");
-        }
+                Greet(Array.Empty<string>());
+                ShouldReturn("Hello, my friend.");
+            }
 
-        [Test]
-        public void Two_names()
-        {
-            Greet(new string[] { "Jack", "Jill" });
+            [Test]
+            public void Two_names()
+            {
+                Greet("Jack", "Jill");
 
-            ShouldReturn("Hello, Jack and Jill.");
-        }
+                ShouldReturn("Hello, Jack and Jill.");
+            }
 
-        private void Greet(string[] names)
-        {
-            result = GreetingKata.Greet(names);
-        }
+            [Test]
+            public void Arbitrary_amount_of_names()
+            {
+                Greet(new string[] { "John", "Joe", "Jim" });
 
-        private void Greet(string name)
-        {
-            result = GreetingKata.Greet(name);
+                ShouldReturn("Hello John, Joe, and Jim");
+            }
+
+            [Test]
+            public void Single_shout()
+            {
+
+            }
+
+            [Ignore("todo")]
+            [Test]
+            public void Mixin_shouts()
+            {
+
+            }
+
+            private void Greet(params string[] names)
+            {
+                result = GreetingKata.Greet(names);
+            }
         }
 
         private void ShouldReturn(string expected)
