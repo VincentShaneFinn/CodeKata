@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace CSharpKata.Test
+namespace CSharpKata.Test.Archive
 {
     //https://github.com/testdouble/contributing-tests/wiki/Greeting-Kata
 

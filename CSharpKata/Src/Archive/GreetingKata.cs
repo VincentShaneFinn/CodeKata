@@ -1,6 +1,6 @@
 ﻿using Castle.Core.Internal;
 
-namespace CSharpKata.Src
+namespace CSharpKata.Src.Archive
 {
     public static class GreetingKata
     {
